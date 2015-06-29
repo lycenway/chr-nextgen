@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chr-nextgen.iml" filepath="$PROJECT_DIR$/chr-nextgen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-backbone/nextgen-backbone.iml" filepath="$PROJECT_DIR$/nextgen-backbone/nextgen-backbone.iml" />
+    </modules>
+  </component>
+</project>
