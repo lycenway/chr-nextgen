@@ -9,7 +9,7 @@
 	<groupId>com.lycenway.chr</groupId>
 	<artifactId>nextgen-backbone</artifactId>
 	<packaging>war</packaging>
-	<name>nextgen-backbone Portlet</name>
+	<name>Nextgen Backbone Portlet</name>
 	<version>1.0-SNAPSHOT</version>
 	<build>
 		<plugins>
