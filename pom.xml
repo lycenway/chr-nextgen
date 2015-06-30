@@ -39,5 +39,11 @@
 
   <modules>
     <module>nextgen-backbone</module>
+    <module>nextgen-liferay-web</module>
+    <module>nextgen-theme</module>
+    <module>nextgen-service</module>
+    <module>nextgen-richfaces</module>
+    <module>nextgen-primefaces</module>
+    <module>nextgen-alloyui</module>
   </modules>
 </project>

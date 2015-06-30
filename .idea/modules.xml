@@ -3,7 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/chr-nextgen.iml" filepath="$PROJECT_DIR$/chr-nextgen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-alloyui/nextgen-alloyui.iml" filepath="$PROJECT_DIR$/nextgen-alloyui/nextgen-alloyui.iml" />
       <module fileurl="file://$PROJECT_DIR$/nextgen-backbone/nextgen-backbone.iml" filepath="$PROJECT_DIR$/nextgen-backbone/nextgen-backbone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-liferay-web/nextgen-liferay-web.iml" filepath="$PROJECT_DIR$/nextgen-liferay-web/nextgen-liferay-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-primefaces/nextgen-primefaces.iml" filepath="$PROJECT_DIR$/nextgen-primefaces/nextgen-primefaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-richfaces/nextgen-richfaces.iml" filepath="$PROJECT_DIR$/nextgen-richfaces/nextgen-richfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-service/nextgen-service.iml" filepath="$PROJECT_DIR$/nextgen-service/nextgen-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet/nextgen-service-portlet.iml" filepath="$PROJECT_DIR$/nextgen-service/nextgen-service-portlet/nextgen-service-portlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet-service/nextgen-service-portlet-service.iml" filepath="$PROJECT_DIR$/nextgen-service/nextgen-service-portlet-service/nextgen-service-portlet-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nextgen-theme/nextgen-theme.iml" filepath="$PROJECT_DIR$/nextgen-theme/nextgen-theme.iml" />
     </modules>
   </component>
 </project>

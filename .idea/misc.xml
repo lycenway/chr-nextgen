@@ -39,12 +39,19 @@
     </properties>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/nextgen-alloyui" />
     <file type="web" url="file://$PROJECT_DIR$/nextgen-backbone" />
+    <file type="web" url="file://$PROJECT_DIR$/nextgen-liferay-web" />
+    <file type="web" url="file://$PROJECT_DIR$/nextgen-primefaces" />
+    <file type="web" url="file://$PROJECT_DIR$/nextgen-richfaces" />
+    <file type="web" url="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet" />
+    <file type="web" url="file://$PROJECT_DIR$/nextgen-theme" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/nextgen-alloyui/pom.xml" />
       </list>
     </option>
   </component>
