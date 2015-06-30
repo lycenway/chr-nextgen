@@ -14,9 +14,9 @@
 			<mime-type>text/html</mime-type>
 		</supports>
 		<portlet-info>
-			<title>nextgen-backbone</title>
-			<short-title>nextgen-backbone</short-title>
-			<keywords>nextgen-backbone</keywords>
+			<title>工务先锋-维修计划</title>
+			<short-title>工务先锋-维修计划</short-title>
+			<keywords>工务先锋,维修计划</keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>
