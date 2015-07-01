@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/nextgen-alloyui" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nextgen-backbone" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nextgen-liferay-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nextgen-primefaces" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nextgen-richfaces" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nextgen-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nextgen-theme" charset="UTF-8" />
   </component>
 </project>

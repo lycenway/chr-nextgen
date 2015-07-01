@@ -29,25 +29,61 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="nextgen-alloyui" />
-        <module name="nextgen-liferay-web" />
-        <module name="nextgen-primefaces" />
-        <module name="nextgen-richfaces" />
-        <module name="nextgen-service-portlet" />
-        <module name="nextgen-service-portlet-service" />
         <module name="nextgen-theme" />
+      </profile>
+      <profile default="false" name="Annotation profile for nextgen-alloyui" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="nextgen-alloyui" />
+      </profile>
+      <profile default="false" name="Annotation profile for nextgen-richfaces" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="nextgen-richfaces" />
+      </profile>
+      <profile default="false" name="Annotation profile for nextgen-service-portlet" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="nextgen-service-portlet" />
+      </profile>
+      <profile default="false" name="Annotation profile for nextgen-liferay-web" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="nextgen-liferay-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for nextgen-service-portlet-service" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="nextgen-service-portlet-service" />
+      </profile>
+      <profile default="false" name="Annotation profile for nextgen-primefaces" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="nextgen-primefaces" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chr-nextgen" target="1.5" />
-      <module name="nextgen-alloyui" target="1.5" />
+      <module name="nextgen-alloyui" target="1.6" />
       <module name="nextgen-backbone" target="1.6" />
-      <module name="nextgen-liferay-web" target="1.5" />
-      <module name="nextgen-primefaces" target="1.5" />
-      <module name="nextgen-richfaces" target="1.5" />
-      <module name="nextgen-service" target="1.5" />
-      <module name="nextgen-service-portlet" target="1.5" />
-      <module name="nextgen-service-portlet-service" target="1.5" />
+      <module name="nextgen-liferay-web" target="1.6" />
+      <module name="nextgen-primefaces" target="1.6" />
+      <module name="nextgen-richfaces" target="1.6" />
+      <module name="nextgen-service" target="1.6" />
+      <module name="nextgen-service-portlet" target="1.6" />
+      <module name="nextgen-service-portlet-service" target="1.6" />
       <module name="nextgen-theme" target="1.5" />
     </bytecodeTargetLevel>
   </component>
