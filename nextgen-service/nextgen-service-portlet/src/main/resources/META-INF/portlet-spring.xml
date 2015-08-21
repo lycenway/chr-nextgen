@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.lycenway.chr.backbone.service.BinghaiLocalService" class="com.lycenway.chr.backbone.service.impl.BinghaiLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.BinghaiService" class="com.lycenway.chr.backbone.service.impl.BinghaiServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.BinghaiPersistence" class="com.lycenway.chr.backbone.service.persistence.BinghaiPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.BinghaiPingfenLocalService" class="com.lycenway.chr.backbone.service.impl.BinghaiPingfenLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.BinghaiPingfenService" class="com.lycenway.chr.backbone.service.impl.BinghaiPingfenServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.BinghaiPingfenPersistence" class="com.lycenway.chr.backbone.service.persistence.BinghaiPingfenPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.BinghaiProofLocalService" class="com.lycenway.chr.backbone.service.impl.BinghaiProofLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.BinghaiProofService" class="com.lycenway.chr.backbone.service.impl.BinghaiProofServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.BinghaiProofPersistence" class="com.lycenway.chr.backbone.service.persistence.BinghaiProofPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.LOVBinghaiLeixingLocalService" class="com.lycenway.chr.backbone.service.impl.LOVBinghaiLeixingLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.LOVBinghaiLeixingPersistence" class="com.lycenway.chr.backbone.service.persistence.LOVBinghaiLeixingPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.LOVMuTypeLocalService" class="com.lycenway.chr.backbone.service.impl.LOVMuTypeLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.LOVMuTypePersistence" class="com.lycenway.chr.backbone.service.persistence.LOVMuTypePersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.MuLocalService" class="com.lycenway.chr.backbone.service.impl.MuLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.MuPersistence" class="com.lycenway.chr.backbone.service.persistence.MuPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.MuExtLocalService" class="com.lycenway.chr.backbone.service.impl.MuExtLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.MuExtPersistence" class="com.lycenway.chr.backbone.service.persistence.MuExtPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.MuInterrelLocalService" class="com.lycenway.chr.backbone.service.impl.MuInterrelLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.MuInterrelPersistence" class="com.lycenway.chr.backbone.service.persistence.MuInterrelPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.MuQuxianQujianLocalService" class="com.lycenway.chr.backbone.service.impl.MuQuxianQujianLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.MuQuxianQujianPersistence" class="com.lycenway.chr.backbone.service.persistence.MuQuxianQujianPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.MuWufengXianluLocalService" class="com.lycenway.chr.backbone.service.impl.MuWufengXianluLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.MuWufengXianluPersistence" class="com.lycenway.chr.backbone.service.persistence.MuWufengXianluPersistenceImpl" parent="basePersistence" />
+	<bean id="com.lycenway.chr.backbone.service.MuZhengxianPodaoLocalService" class="com.lycenway.chr.backbone.service.impl.MuZhengxianPodaoLocalServiceImpl" />
+	<bean id="com.lycenway.chr.backbone.service.persistence.MuZhengxianPodaoPersistence" class="com.lycenway.chr.backbone.service.persistence.MuZhengxianPodaoPersistenceImpl" parent="basePersistence" />
+</beans>

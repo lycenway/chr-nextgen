@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.lycenway.chr.backbone.model.Binghai" />
+	<import class="com.lycenway.chr.backbone.model.BinghaiPingfen" />
+	<import class="com.lycenway.chr.backbone.model.BinghaiProof" />
+	<import class="com.lycenway.chr.backbone.model.LOVBinghaiLeixing" />
+	<import class="com.lycenway.chr.backbone.model.LOVMuType" />
+	<import class="com.lycenway.chr.backbone.model.Mu" />
+	<import class="com.lycenway.chr.backbone.model.MuExt" />
+	<import class="com.lycenway.chr.backbone.model.MuInterrel" />
+	<import class="com.lycenway.chr.backbone.model.MuQuxianQujian" />
+	<import class="com.lycenway.chr.backbone.model.MuWufengXianlu" />
+	<import class="com.lycenway.chr.backbone.model.MuZhengxianPodao" />
+	<class name="com.lycenway.chr.backbone.model.impl.BinghaiImpl" table="base_binghai">
+		<cache usage="read-write" />
+		<id name="binghaiId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="hkey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="muTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="buwei" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="tab" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cName" access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cId" access="com.liferay.portal.dao.orm.hibernate.CamelCasePropertyAccessor" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="c1Name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="c1Id" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="c2Name" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="c2Id" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="binghaiLeixing" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="stageName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="stageId" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="koufen" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="visitContent" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="visitedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="visitedOn" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="revisitedBy" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="revisitedOn" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="binghaiShuzhi" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="gongzuoliangAction" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gongzuoliangName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gongzuoliangUnit" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="gongzuoliangTval" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="proofCount" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="referenceRadio" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="daochaJson" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.BinghaiPingfenImpl" table="lov_binghai_pingfen">
+		<cache usage="read-write" />
+		<id name="binghaiPingfenId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="dalei" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="vmin" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="vmax" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="xiangmu" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="dengji" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="dengji_min" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="dengji_max" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.BinghaiProofImpl" table="base_binghai_proof">
+		<cache usage="read-write" />
+		<id name="binghaiProofId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="mime" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="url" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="binghaiId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.LOVBinghaiLeixingImpl" table="lov_binghai_leixing">
+		<cache usage="read-write" />
+		<id name="code" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.LOVMuTypeImpl" table="lov_mu_type">
+		<cache usage="read-write" />
+		<id name="code" column="code_" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.MuImpl" table="base_mu">
+		<cache usage="read-write" />
+		<composite-id name="primaryKey" class="com.lycenway.chr.backbone.service.persistence.MuPK">
+			<key-property name="hkey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+			<key-property name="muId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		</composite-id>
+		<property name="par" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="title" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.MuExtImpl" table="base_mu_ext">
+		<cache usage="read-write" />
+		<id name="muExtId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="hkey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="value" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="key" type="com.liferay.portal.dao.orm.hibernate.StringType" column="key_" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.MuInterrelImpl" table="base_mu_interrel">
+		<cache usage="read-write" />
+		<id name="muInterrelId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="hkey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="par" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="type" type="com.liferay.portal.dao.orm.hibernate.StringType" column="type_" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.MuQuxianQujianImpl" table="base_mu_quxian_qujian">
+		<cache usage="read-write" />
+		<id name="muQuxianQujianId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="hkey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.MuWufengXianluImpl" table="base_mu_wufeng_xianlu">
+		<cache usage="read-write" />
+		<id name="muWufengXianluId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="hkey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+	<class name="com.lycenway.chr.backbone.model.impl.MuZhengxianPodaoImpl" table="base_mu_zhengxian_podao">
+		<cache usage="read-write" />
+		<id name="muZhengxianPodaoId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="hkey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+	</class>
+</hibernate-mapping>

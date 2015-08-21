@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.BinghaiModelImpl">
+		<attributes>
+			<id name="binghaiId" />
+			<basic name="hkey" />
+			<basic name="muTitle" />
+			<basic name="buwei" />
+			<basic name="tab" />
+			<basic name="cName" />
+			<basic name="cId" />
+			<basic name="c1Name" />
+			<basic name="c1Id" />
+			<basic name="c2Name" />
+			<basic name="c2Id" />
+			<basic name="binghaiLeixing" />
+			<basic name="stageName" />
+			<basic name="stageId" />
+			<basic name="koufen" />
+			<basic name="visitContent" />
+			<basic name="visitedBy" />
+			<basic name="visitedOn" />
+			<basic name="revisitedBy" />
+			<basic name="revisitedOn" />
+			<basic name="binghaiShuzhi" />
+			<basic name="gongzuoliangAction" />
+			<basic name="gongzuoliangName" />
+			<basic name="gongzuoliangUnit" />
+			<basic name="gongzuoliangTval" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="proofCount" />
+			<basic name="referenceRadio" />
+			<basic name="daochaJson" />
+			<transient name="CId" />
+			<transient name="CName" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.BinghaiPingfenModelImpl">
+		<attributes>
+			<id name="binghaiPingfenId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="dalei" />
+			<basic name="vmin" />
+			<basic name="vmax" />
+			<basic name="xiangmu" />
+			<basic name="dengji" />
+			<basic name="dengji_min" />
+			<basic name="dengji_max" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.BinghaiProofModelImpl">
+		<attributes>
+			<id name="binghaiProofId" />
+			<basic name="mime" />
+			<basic name="url" />
+			<basic name="binghaiId" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.LOVBinghaiLeixingModelImpl">
+		<attributes>
+			<id name="code" />
+			<basic name="title" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.LOVMuTypeModelImpl">
+		<attributes>
+			<id name="code">
+				<column name="CODE_" />
+			</id>
+			<basic name="title" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.MuModelImpl">
+		<id-class class="com.lycenway.chr.backbone.service.persistence.MuPK" />
+		<attributes>
+			<id name="hkey" />
+			<id name="muId" />
+			<basic name="par" />
+			<basic name="title" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.MuExtModelImpl">
+		<attributes>
+			<id name="muExtId" />
+			<basic name="hkey" />
+			<basic name="value" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="key">
+				<column name="KEY_" />
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.MuInterrelModelImpl">
+		<attributes>
+			<id name="muInterrelId" />
+			<basic name="hkey" />
+			<basic name="par" />
+			<basic name="type">
+				<column name="TYPE_" />
+			</basic>
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.MuQuxianQujianModelImpl">
+		<attributes>
+			<id name="muQuxianQujianId" />
+			<basic name="hkey" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.MuWufengXianluModelImpl">
+		<attributes>
+			<id name="muWufengXianluId" />
+			<basic name="hkey" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="com.lycenway.chr.backbone.model.impl.MuZhengxianPodaoModelImpl">
+		<attributes>
+			<id name="muZhengxianPodaoId" />
+			<basic name="hkey" />
+			<basic name="groupId" />
+			<basic name="companyId" />
+			<basic name="userId" />
+			<basic name="userName" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="userUuid" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="com.lycenway.chr.backbone.model.impl.BinghaiImpl" name="Binghai">
+		<table name="base_binghai" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.BinghaiPingfenImpl" name="BinghaiPingfen">
+		<table name="lov_binghai_pingfen" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.BinghaiProofImpl" name="BinghaiProof">
+		<table name="base_binghai_proof" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.LOVBinghaiLeixingImpl" name="LOVBinghaiLeixing">
+		<table name="lov_binghai_leixing" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.LOVMuTypeImpl" name="LOVMuType">
+		<table name="lov_mu_type" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.MuImpl" name="Mu">
+		<table name="base_mu" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.MuExtImpl" name="MuExt">
+		<table name="base_mu_ext" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.MuInterrelImpl" name="MuInterrel">
+		<table name="base_mu_interrel" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.MuQuxianQujianImpl" name="MuQuxianQujian">
+		<table name="base_mu_quxian_qujian" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.MuWufengXianluImpl" name="MuWufengXianlu">
+		<table name="base_mu_wufeng_xianlu" />
+		<attributes />
+	</entity>
+	<entity class="com.lycenway.chr.backbone.model.impl.MuZhengxianPodaoImpl" name="MuZhengxianPodao">
+		<table name="base_mu_zhengxian_podao" />
+		<attributes />
+	</entity>
+</entity-mappings>

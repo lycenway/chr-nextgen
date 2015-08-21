@@ -1,48 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.lycenway.chr.backbone">
+	<author>lycenway</author>
+	<namespace>Chr</namespace>
+	<entity name="Mu" human-name="Mgmt Unit" table="base_mu"
+			local-service="true" remote-service="false">
+		<column name="hkey" type="String" primary="true"
+				db-name="hkey">
+		</column>
+		<column name="par" type="String" db-name="par"></column>
+		<column name="title" type="String" db-name="title"></column>
 
-<service-builder package-path="com.lycenway.chr">
-	<namespace>nextgen-service</namespace>
-	<entity name="Foo" uuid="true" local-service="true" remote-service="true">
 
 		<!-- PK fields -->
 
-		<column name="fooId" type="long" primary="true" />
+		<column name="muId" type="long" primary="true"></column>
 
 		<!-- Group instance -->
 
-		<column name="groupId" type="long" />
+		<column name="groupId" type="long"></column>
 
 		<!-- Audit fields -->
 
-		<column name="companyId" type="long" />
-		<column name="userId" type="long" />
-		<column name="userName" type="String" />
-		<column name="createDate" type="Date" />
-		<column name="modifiedDate" type="Date" />
-
-		<!-- Other fields -->
-
-		<column name="field1" type="String" />
-		<column name="field2" type="boolean" />
-		<column name="field3" type="int" />
-		<column name="field4" type="Date" />
-		<column name="field5" type="String" />
-
-		<!-- Order -->
-
-		<order by="asc">
-			<order-column name="field1" />
-		</order>
-
-		<!-- Finder methods -->
-
-		<finder name="Field2" return-type="Collection">
-			<finder-column name="field2" />
-		</finder>
-
-		<!-- References -->
-
-		<reference package-path="com.liferay.portlet.asset" entity="AssetEntry" />
-		<reference package-path="com.liferay.portlet.asset" entity="AssetTag" />
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
 	</entity>
+	<entity name="MuExt" human-name="Mgmt Unit Extended Attributes"
+			table="base_mu_ext" local-service="true"
+			remote-service="false">
+		<column name="hkey" type="String"></column>
+		<column name="value" type="String"></column>
+
+
+		<!-- PK fields -->
+
+		<column name="muExtId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="key" type="String"></column>
+	</entity>
+	<entity name="MuInterrel" human-name="Mgmt Unit Inter Relationship"
+			table="base_mu_interrel" local-service="true"
+			remote-service="false">
+		<column name="hkey" type="String"></column>
+		<column name="par" type="String"></column>
+		<column name="type" type="String"></column>
+
+
+		<!-- PK fields -->
+
+		<column name="muInterrelId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+	</entity>
+	<entity name="MuQuxianQujian"
+			human-name="Mgmt Unit of Quxian Qujian" table="base_mu_quxian_qujian"
+			local-service="true" remote-service="false">
+		<column name="hkey" type="String"></column>
+
+
+		<!-- PK fields -->
+
+		<column name="muQuxianQujianId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+	</entity>
+	<entity name="MuZhengxianPodao"
+			human-name="Mgmt Unit of Zhengxian Podao"
+			table="base_mu_zhengxian_podao" local-service="true"
+			remote-service="false">
+		<column name="hkey" type="String"></column>
+
+
+		<!-- PK fields -->
+
+		<column name="muZhengxianPodaoId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+	</entity>
+	<entity name="MuWufengXianlu"
+			human-name="Mgmt Unit of Wufeng Xianlu" table="base_mu_wufeng_xianlu"
+			local-service="true" remote-service="false">
+		<column name="hkey" type="String"></column>
+
+
+		<!-- PK fields -->
+
+		<column name="muWufengXianluId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+	</entity>
+	<entity name="LOVMuType" human-name="Lisf of Value Mgmt Unit Type" table="lov_mu_type" local-service="true" remote-service="false">
+		<column name="code" type="String" primary="true"></column>
+		<column name="title" type="String"></column>
+	</entity>
+	<entity name="LOVBinghaiLeixing" human-name="List of Value Binghai Leixing - Case Type" table="lov_binghai_leixing" local-service="true" remote-service="false">
+		<column name="code" type="String" primary="true" db-name="code"></column>
+		<column name="title" type="String" db-name="title"></column>
+	</entity>
+	<entity name="Binghai" human-name="Binghai Case Weixiu Wenti"
+			table="base_binghai" local-service="true" remote-service="true">
+		<column name="hkey" type="String"></column>
+		<column name="muTitle" type="String"></column>
+		<column name="buwei" type="String"></column>
+		<column name="tab" type="String"></column>
+		<column name="cName" type="String"></column>
+		<column name="cId" type="int"></column>
+		<column name="c1Name" type="String"></column>
+		<column name="c1Id" type="int"></column>
+		<column name="c2Name" type="String"></column>
+		<column name="c2Id" type="int"></column>
+		<column name="binghaiLeixing" type="String"></column>
+		<column name="stageName" type="String"></column>
+		<column name="stageId" type="int"></column>
+		<column name="koufen" type="int"></column>
+		<column name="visitContent" type="String"></column>
+		<column name="visitedBy" type="String"></column>
+		<column name="visitedOn" type="String"></column>
+		<column name="revisitedBy" type="String"></column>
+		<column name="revisitedOn" type="String"></column>
+		<column name="binghaiShuzhi" type="int"></column>
+		<column name="gongzuoliangAction" type="String"></column>
+		<column name="gongzuoliangName" type="String"></column>
+		<column name="gongzuoliangUnit" type="String"></column>
+
+
+		<!-- PK fields -->
+		<column name="gongzuoliangTval" type="String"></column>
+
+		<column name="binghaiId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="proofCount" type="long"></column>
+		<column name="referenceRadio" type="String"></column>
+		<column name="daochaJson" type="String"></column>
+
+		<finder name="GroupId" return-type="Collection">
+			<finder-column name="groupId"></finder-column>
+		</finder>
+		<finder name="Visited" return-type="Collection">
+			<finder-column name="visitedOn"></finder-column>
+		</finder>
+		<finder name="Koufen" return-type="Collection">
+			<finder-column name="koufen" comparator="&gt;="></finder-column>
+		</finder>
+		<finder name="VisitedBy" return-type="Collection">
+			<finder-column comparator="=" name="visitedBy" case-sensitive="false"></finder-column>
+		</finder>
+		<finder name="Leixing" return-type="Collection">
+			<finder-column name="binghaiLeixing"></finder-column>
+		</finder>
+		<finder name="UserId" return-type="Collection">
+			<finder-column name="userId" comparator="="></finder-column>
+		</finder>
+	</entity>
+	<entity name="BinghaiProof" remote-service="true"
+			local-service="true" human-name="Binghai Attachments Pictures" table="base_binghai_proof">
+		<column name="mime" type="String"></column>
+		<column name="url" type="String"></column>
+		<column name="binghaiId" type="String"></column>
+
+
+		<!-- PK fields -->
+
+		<column name="binghaiProofId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+	</entity>
+	<entity name="BinghaiPingfen" local-service="true" table="lov_binghai_pingfen">
+
+		<!-- PK fields -->
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+
+
+		<!-- PK fields -->
+
+		<!-- Group instance -->
+
+		<!-- Audit fields -->
+
+
+		<!-- PK fields -->
+
+		<column name="binghaiPingfenId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+		<column name="dalei" type="String"></column>
+		<column name="vmin" type="double"></column>
+		<column name="vmax" type="double"></column>
+		<column name="xiangmu" type="String"></column>
+		<column name="dengji" type="String"></column>
+		<column name="dengji_min" type="double"></column>
+		<column name="dengji_max" type="double"></column>
+		<finder name="dalei_xiangmu" return-type="Collection">
+			<finder-column name="dalei" comparator="="></finder-column>
+			<finder-column name="vmin" comparator="&lt;"></finder-column>
+			<finder-column name="vmax" comparator="&gt;="></finder-column>
+			<finder-column name="xiangmu" comparator="="></finder-column>
+			<finder-column name="dengji_min" comparator="&lt;="></finder-column>
+			<finder-column name="dengji_max" comparator="&gt;="></finder-column>
+		</finder>
+	</entity>
+	<exceptions>
+		<exception>BinghaiName</exception>
+	</exceptions>
 </service-builder>

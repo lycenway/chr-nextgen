@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.lycenway.chr.backbone.model.Binghai">
+		<field name="hkey" type="String" />
+		<field name="muTitle" type="String" />
+		<field name="buwei" type="String" />
+		<field name="tab" type="String" />
+		<field name="cName" type="String" />
+		<field name="cId" type="int" />
+		<field name="c1Name" type="String" />
+		<field name="c1Id" type="int" />
+		<field name="c2Name" type="String" />
+		<field name="c2Id" type="int" />
+		<field name="binghaiLeixing" type="String" />
+		<field name="stageName" type="String" />
+		<field name="stageId" type="int" />
+		<field name="koufen" type="int" />
+		<field name="visitContent" type="String" />
+		<field name="visitedBy" type="String" />
+		<field name="visitedOn" type="String" />
+		<field name="revisitedBy" type="String" />
+		<field name="revisitedOn" type="String" />
+		<field name="binghaiShuzhi" type="int" />
+		<field name="gongzuoliangAction" type="String" />
+		<field name="gongzuoliangName" type="String" />
+		<field name="gongzuoliangUnit" type="String" />
+		<field name="gongzuoliangTval" type="String" />
+		<field name="binghaiId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="proofCount" type="long" />
+		<field name="referenceRadio" type="String" />
+		<field name="daochaJson" type="String" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.BinghaiPingfen">
+		<field name="binghaiPingfenId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="dalei" type="String" />
+		<field name="vmin" type="double" />
+		<field name="vmax" type="double" />
+		<field name="xiangmu" type="String" />
+		<field name="dengji" type="String" />
+		<field name="dengji_min" type="double" />
+		<field name="dengji_max" type="double" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.BinghaiProof">
+		<field name="mime" type="String" />
+		<field name="url" type="String" />
+		<field name="binghaiId" type="String" />
+		<field name="binghaiProofId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.LOVBinghaiLeixing">
+		<field name="code" type="String" />
+		<field name="title" type="String" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.LOVMuType">
+		<field name="code" type="String" />
+		<field name="title" type="String" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.Mu">
+		<field name="hkey" type="String" />
+		<field name="par" type="String" />
+		<field name="title" type="String" />
+		<field name="muId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.MuExt">
+		<field name="hkey" type="String" />
+		<field name="value" type="String" />
+		<field name="muExtId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="key" type="String" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.MuInterrel">
+		<field name="hkey" type="String" />
+		<field name="par" type="String" />
+		<field name="type" type="String" />
+		<field name="muInterrelId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.MuQuxianQujian">
+		<field name="hkey" type="String" />
+		<field name="muQuxianQujianId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.MuWufengXianlu">
+		<field name="hkey" type="String" />
+		<field name="muWufengXianluId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+	<model name="com.lycenway.chr.backbone.model.MuZhengxianPodao">
+		<field name="hkey" type="String" />
+		<field name="muZhengxianPodaoId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+	</model>
+</model-hints>
