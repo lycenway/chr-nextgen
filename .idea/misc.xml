@@ -49,6 +49,7 @@
     <file type="web" url="file://$PROJECT_DIR$/nextgen-richfaces" />
     <file type="web" url="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet" />
     <file type="web" url="file://$PROJECT_DIR$/nextgen-theme" />
+    <file type="web" url="file://$PROJECT_DIR$/ngchr-report-dashboard" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

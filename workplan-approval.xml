@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-definition xmlns="urn:liferay.com:liferay-workflow_6.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:liferay.com:liferay-workflow_6.2.0 http://www.liferay.com/dtd/liferay-workflow-definition_6_2_0.xsd">
+   <name>Ticket Process</name>
+   <version>1</version>
+   <!-- fork node -->
+   <fork>
+      <name>Pass to QA</name>
+      <transitions>
+         <transition>
+            <name>QA</name>
+            <target>QA</target>
+         </transition>
+         <transition>
+            <name>QA Management</name>
+            <target>QA Management</target>
+         </transition>
+      </transitions>
+   </fork>
+   <!-- join node -->
+   <join>
+      <name>Pass to QA Join</name>
+   </join>
+   <!-- start and end state nodes -->
+   <state>
+      <name>StartNode</name>
+      <initial>true</initial>
+      <transitions>
+         <transition>
+            <name>Developer</name>
+            <target>Developer</target>
+            <default>true</default>
+         </transition>
+      </transitions>
+   </state>
+   <state>
+      <name>EndNode</name>
+      <actions>
+         <action>
+            <name>Approve</name>
+            <description>Approve</description>
+            <script><![CDATA[Packages.com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil.updateStatus(Packages.com.liferay.portal.kernel.workflow.WorkflowConstants.toStatus("approved"), workflowContext);]]></script>
+            <script-language>javascript</script-language>
+            <execution-type>onEntry</execution-type>
+         </action>
+      </actions>
+   </state>
+   <!-- task nodes -->
+   <task>
+      <name>Developer</name>
+      <assignments>
+         <user />
+      </assignments>
+      <transitions>
+         <transition>
+            <name>approved</name>
+            <target>approved</target>
+         </transition>
+         <transition>
+            <name>EndNode</name>
+            <target>EndNode</target>
+         </transition>
+      </transitions>
+   </task>
+   <task>
+      <name>QA</name>
+      <assignments>
+         <user>
+            <screen-name>joe</screen-name>
+         </user>
+      </assignments>
+      <transitions>
+         <transition>
+            <name>Pass to QA Join</name>
+            <target>Pass to QA Join</target>
+         </transition>
+      </transitions>
+   </task>
+   <task>
+      <name>QA Management</name>
+      <assignments>
+         <user>
+            <screen-name>joe</screen-name>
+         </user>
+      </assignments>
+      <transitions>
+         <transition>
+            <name>Pass to QA Join</name>
+            <target>Pass to QA Join</target>
+         </transition>
+      </transitions>
+   </task>
+</workflow-definition>

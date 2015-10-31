@@ -30,6 +30,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="nextgen-theme" />
+        <module name="ngchr-report-dashboard" />
       </profile>
       <profile default="false" name="Annotation profile for nextgen-alloyui" enabled="true">
         <sourceOutputDir name="target\generated-sources\annotations" />
@@ -85,6 +86,7 @@
       <module name="nextgen-service-portlet" target="1.6" />
       <module name="nextgen-service-portlet-service" target="1.6" />
       <module name="nextgen-theme" target="1.5" />
+      <module name="ngchr-report-dashboard" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

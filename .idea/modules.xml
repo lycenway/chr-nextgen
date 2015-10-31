@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet/nextgen-service-portlet.iml" filepath="$PROJECT_DIR$/nextgen-service/nextgen-service-portlet/nextgen-service-portlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/nextgen-service/nextgen-service-portlet-service/nextgen-service-portlet-service.iml" filepath="$PROJECT_DIR$/nextgen-service/nextgen-service-portlet-service/nextgen-service-portlet-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/nextgen-theme/nextgen-theme.iml" filepath="$PROJECT_DIR$/nextgen-theme/nextgen-theme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ngchr-report-dashboard/ngchr-report-dashboard.iml" filepath="$PROJECT_DIR$/ngchr-report-dashboard/ngchr-report-dashboard.iml" />
     </modules>
   </component>
 </project>
